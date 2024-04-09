@@ -134,8 +134,11 @@ const WeatherCard = ({ data }) => {
       </CardHeader>
       <CardContent className="pt-5">
         <div className="grid grid-cols-3 gap-5">
-          {Properties.map((prop) => (
-            <div className="flex flex-col gap-3 p-2 border-2 border-slate-300 rounded-xl">
+          {Properties.map((prop, index) => (
+            <div
+              className="flex flex-col gap-3 p-2 border-2 border-slate-300 rounded-xl"
+              key={index}
+            >
               {prop.icon}
               <h1 className="font-semibold text-lg text-slate-600">
                 {prop.title}
