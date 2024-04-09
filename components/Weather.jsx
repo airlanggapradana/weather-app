@@ -110,7 +110,7 @@ const WeatherCard = ({ data }) => {
     },
   ];
   return (
-    <Card className="border-slate-500 border-2 shadow-md dark:bg-slate-700 rounded-xl">
+    <Card className="border-slate-300 border-2 shadow-md dark:border-teal-500 dark:bg-slate-700 rounded-xl">
       <CardHeader className="border-b-2 border-slate-300">
         <div className="flex items-center justify-between">
           <div className="w-full">
@@ -132,10 +132,10 @@ const WeatherCard = ({ data }) => {
         </div>
       </CardHeader>
       <CardContent className="pt-5">
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
           {Properties.map((prop, index) => (
             <div
-              className="flex flex-col gap-3 p-2 border-2 border-slate-300 rounded-xl"
+              className="flex flex-col gap-3 p-2 border-2 border-slate-300 rounded-xl overflow-hidden"
               key={index}
             >
               {prop.icon}
