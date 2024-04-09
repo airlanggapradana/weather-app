@@ -1,4 +1,7 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-  
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply transition-colors duration-200 ease-out;
+}
