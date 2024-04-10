@@ -32,7 +32,7 @@ export default function Home() {
   };
   return (
     <div className={DarkMode && `dark`}>
-      <section className="w-full top-0 py-4 fixed flex items-center justify-center backdrop-blur-[2px]">
+      <section className="w-full top-0 py-4 flex items-center justify-center backdrop-blur-[2px] dark:bg-slate-800">
         <div className="container">
           <div className="max-w-xl mx-auto px-5">
             <div className="flex items-center justify-center gap-5">
