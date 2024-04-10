@@ -32,7 +32,7 @@ export default function Home() {
   };
   return (
     <div className={DarkMode && `dark`}>
-      <section className="w-full top-0 py-4 flex items-center justify-center backdrop-blur-[2px] dark:bg-slate-800">
+      <section className="w-full top-0 py-4 flex items-center justify-center dark:bg-slate-800">
         <div className="container">
           <div className="max-w-xl mx-auto px-5">
             <div className="flex items-center justify-center gap-5">
@@ -55,7 +55,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex h-screen pt-16 overflow-auto items-center justify-center dark:bg-slate-800">
+      <section className="flex h-screen pt-16 overflow-auto items-start justify-center dark:bg-slate-800">
         <div className="container">
           <div className="max-w-4xl mx-auto px-5">
             <div className="space-y-3">
